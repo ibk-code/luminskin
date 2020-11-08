@@ -1,0 +1,15 @@
+.btn-cart {
+  padding: 0.9rem 1.5rem;
+  outline: none;
+  background-color: $shade-grey;
+  // border-radius: 1.5rem;
+  font-size: 0.8rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.solid {
+  color: $shade-white;
+  border: none;
+}

@@ -1,0 +1,24 @@
+.skip {
+  &:link {
+    position: fixed;
+    left: 3rem;
+    color: $shade-white;
+    transition: 1s ease-in;
+    z-index: 1050;
+    font-size: 1rem;
+    background-color: $shade-grey;
+    text-decoration: none !important;
+    top: -12rem;
+    outline: none;
+    padding: 0 2rem;
+  }
+
+  &:focus {
+    top: 0;
+    color: $shade-white;
+  }
+
+  &:hover {
+    color: $shade-white;
+  }
+}

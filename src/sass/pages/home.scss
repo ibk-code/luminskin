@@ -1,0 +1,20 @@
+.heading {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.container {
+  padding: 3rem 5rem;
+}
+
+.product-list {
+  display: flex;
+  // max-width: 1140px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 1.5rem 0.5rem;
+  }
+}

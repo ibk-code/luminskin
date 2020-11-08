@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from "react";
+import "./sass/main.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+const Home = lazy(() => import("./pages/home"));
 
-function App() {
+const App = () => {
+  const client = new ApolloClient({
+    uri: "https://pangaea-interviews.now.sh/api/graphql",
+    cache: new InMemoryCache(),
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Router>
+        <Suspense fallback={<div>Loading....</div>}>
+          <ApolloProvider client={client}>
+            <Switch>
+              <Route path="/" exact component={Home} />
+            </Switch>
+          </ApolloProvider>
+        </Suspense>
+      </Router>
+    </React.Fragment>
   );
-}
+};
 
 export default App;

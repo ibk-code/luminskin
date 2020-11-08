@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  body {
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

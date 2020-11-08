@@ -1,0 +1,71 @@
+.md-top {
+  margin-top: 4rem;
+}
+
+.lg-font {
+  font-size: 4.6rem;
+}
+
+.lt-space {
+  letter-spacing: -3.7px;
+}
+
+.lg-spacing-tb {
+  padding: 5rem 0;
+}
+
+.s-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.e-bold {
+  font-weight: 800;
+}
+
+.lg-btn {
+  padding: 0.8rem 2.5rem;
+}
+
+.heavy {
+  font-weight: 900;
+}
+
+.bg-ash {
+  background-color: $primary-ash !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.bg-white {
+  background-color: $tone-white;
+}
+
+.ash {
+  color: $primary-ash !important;
+}
+
+.md-pad {
+  padding: 7rem 0;
+}
+
+.bg-grey {
+  background-color: $shade-grey;
+}
+
+@media screen and (max-width: 1024px) {
+  .lg-font {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lg-font {
+    font-size: 3rem;
+  }
+}
